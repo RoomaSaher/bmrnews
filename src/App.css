@@ -1,30 +1,84 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: rgb(245, 245, 245);
+}
+
 img {
   display: block;
   width: 100%;
-  margin: 5px;
+  margin-bottom: 2px;
+}
+.row.no-gutter {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.row.no-gutter > div[class*="col-"] {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.short {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .main {
   text-align: center;
   justify-content: center;
 }
+.size {
+  font-size: 12px;
+}
+.big {
+  height: 365px;
+  /* width: 370px; */
+}
+@media (min-width: 576px) {
+  .big {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .big {
+    height: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .big {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .big {
+    height: 365px;
+  }
+}
+
+.date {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 22%;
   transform: translate(-50%, -50%);
 }
 .white_text {
   position: absolute;
   top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 35%;
+  transform: translate(-30%, -30%);
   font-weight: 500;
   font-family: Roboto;
   color: white;
-  font-size: large;
+  /* font-size: large; */
 }
 .quick {
   position: absolute;
@@ -32,7 +86,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 500;
-  font-size: xx-large;
+  /* font-size: xx-large; */
   font-family: Roboto;
   color: white;
 }

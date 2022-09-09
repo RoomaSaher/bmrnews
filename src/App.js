@@ -3,11 +3,15 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <div className="row">
+      <div className="container body">
+        <div className="row no-gutter">
           <div className="col-lg-2 col-md-4 col-sm-6">
             <img src="images/calc-bg.svg" alt="" />
-            <div class="centered">Text</div>
+            <span class="date">
+              {" "}
+              <h3> September</h3>
+            </span>
+            <div class="centered display-3">6{/* <h1>6</h1> */}</div>
           </div>
           <div className="col-lg-2 col-md-4 col-sm-6">
             <img src="images/anno-bg.svg" alt="" />
@@ -24,46 +28,52 @@ function App() {
             <img src="images/ExecutiveUpdate.svg" alt="" />
             <div class="white_text"> Execute</div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-6">
+          <div className="col-lg-2 col-md-4 col-sm-5">
             <img src="images/ExecutiveUpdate.svg" alt="" />
-            <div class="white_text">Update</div>
+            <div class="white_text">
+              <span> Execute</span> <span>Update</span>{" "}
+            </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-lg-6 col-md-8 col-sm-6">
-            <div className="row">
-              <div className="col-lg-4 col-md-6 col-sm-12">
+        <div className="row no-gutter">
+          <div className="col-lg-6 col-md-6 col-sm-6">
+            <div className="row no-gutter">
+              <div className="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/account-bg1.svg" alt="" />
                 <div class="white_text">Accounting</div>
               </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/Audit.svg" alt="" />
                 <div class="white_text">Audit</div>
               </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/BioMedVentures.svg" alt="" />
                 {/* <div class="black_text">BioMed Ventures</div> */}
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-6 col-sm-12">
+            <div className="row no-gutter">
+              <div className="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/development-bg.svg" alt="" />
                 <div class="white_text">Development</div>
               </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/finance-bg.svg" alt="" />
                 <div class="white_text">Integration</div>
               </div>
-              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="col-lg-4 col-md-4 col-sm-12">
                 <img src="images/homepage.png" alt="" />
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-8 col-sm-12 big">
-            <img src="images/quick-launch-bg.svg" alt="" />
-            <div class="quick">Quick Launch</div>
+          <div className="col-lg-4 col-md-6 col-sm-12 ">
+            <img
+              src="images/quick-launch-bg.svg"
+              className="big img-responsive"
+              alt=""
+            />
+            <div class="quick lead">Quick Launch</div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-12">
+          <div className="col-lg-2 col-md-4 col-sm-4 no-gutter">
             <div className="">
               <img src="images/PressRelease.svg" alt="" />
             </div>
@@ -73,7 +83,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row no-gutter">
           <div className="col-lg-2 col-md-4 col-sm-6">
             <img src="images/HumanResources.svg" alt="" />
             <div class="white_text">Resources</div>
@@ -88,6 +98,7 @@ function App() {
           </div>
           <div className="col-lg-2 col-md-4 col-sm-6">
             <img src="images/leasing-bg.svg" alt="" />
+            <div class="white_text">Leasing</div>
           </div>
           <div className="col-lg-2 col-md-4 col-sm-6">
             <img src="images/legal-bg.svg" alt="" />
@@ -99,7 +110,7 @@ function App() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row no-gutter">
           <div className="col-lg-1 col-md-4 col-sm-6">
             <div className="">
               <img src="images/smile-bg.png" alt="" />
@@ -117,7 +128,7 @@ function App() {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="row">
+            <div className="row  short">
               <div className="col">
                 <img src="images/box-bg.png" alt="" />
               </div>
@@ -132,15 +143,18 @@ function App() {
               <img src="images/LeedershipIsLighting.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-6">
+          <div className="col-lg-2 col-md-4 col-sm-4">
             <img src="images/Operations.svg" alt="" />
-            <div class="white_text">Operations</div>
+            <div class="black_text">Operations</div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-6">
+          <div className="col-lg-2 col-md-4 col-sm-4">
             <img src="images/Risk-Mgmt.jpg" alt="" />
-            <div class="white_text">Risk Management </div>
+            <div class="white_text">
+              {" "}
+              <span> Risk</span> <span>Manage</span>{" "}
+            </div>
           </div>
-          <div className="col-lg-2 col-md-4 col-sm-6">
+          <div className="col-lg-2 col-md-4 col-sm-4">
             <img src="images/EmplyoeeConnect1.png" alt="" />
           </div>
         </div>
