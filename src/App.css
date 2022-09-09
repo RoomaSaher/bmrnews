@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+img {
+  display: block;
+  width: 100%;
+  margin: 5px;
+}
+.main {
+  text-align: center;
+  justify-content: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.white_text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-family: Roboto;
+  color: white;
+  font-size: large;
+}
+.quick {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: xx-large;
+  font-family: Roboto;
+  color: white;
+}
+.black_text {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  right: 20%;
+  font-weight: 500;
+  font-family: Roboto;
+  color: black;
+  font-size: large;
+}
